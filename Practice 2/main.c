@@ -1,5 +1,5 @@
-#include "math.h"
-#include "stdio.h"
+#include <stdio.h>
+#include <math.h>
 
 
 void calculate_functions(double* z1, double* z2, int x, int y){
@@ -9,9 +9,10 @@ void calculate_functions(double* z1, double* z2, int x, int y){
 
 int main(){
     double z1, z2;
-    calculate_functions(&z1, &z2, 5, 10);
 
+    calculate_functions(&z1, &z2, 5, 10);
     printf("z1 = %f \nz2 = %f", z1, z2);
 
     return 0;
 }
+ 
